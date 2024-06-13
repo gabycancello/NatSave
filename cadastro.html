@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NatSave</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="assets/css/login_cadastro.css" />
+
+        <div vw class="enabled">
+			<div vw-access-button class="active"></div>
+			<div vw-plugin-wrapper>
+			  <div class="vw-plugin-top-wrapper"></div>
+			</div>
+		  </div>
+		  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		  <script>
+			new window.VLibras.Widget('https://vlibras.gov.br/app');
+		  </script>
+    </head>
+    <body>
+        <img class="wave" src="images/wave.png" alt="wave" />
+        <div class="container">
+            <div class="img">
+                <img src="images/mobileregister.svg" alt="Background">
+            </div>
+            <div class="login-container">
+                <form method="POST" action="cadastro_empresa.php">
+                    <img src="images/empresa.svg" class="avatar" alt="Avatar" />
+                    <h2>Vamos começar?!</h2>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Nome da empresa</h5>
+                            <input type="text" name="nomeempresa" class="input" maxlength="50" required>
+                        </div>
+                    </div>
+
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Número de funcionários</h5>
+                            <input type="number" name="numfuncionario" class="input" required>
+                        </div>
+                    </div>
+
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>CNPJ</h5>
+                            <input type="text" name="cnpj" class="input" maxlength="14" required>
+                        </div>
+                    </div>
+
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>E-mail</h5>
+                            <input type="email" name="email" class="input" required>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <input type="submit" class="btn" value="Cadastrar!">
+
+                </form>
+            </div>
+        </div>
+
+        <script src="assets/js/login.js"></script>
+    </body>
+</html>

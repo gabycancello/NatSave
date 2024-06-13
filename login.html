@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NatSave</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="assets/css/login_cadastro.css" />
+
+        <div vw class="enabled">
+			<div vw-access-button class="active"></div>
+			<div vw-plugin-wrapper>
+			  <div class="vw-plugin-top-wrapper"></div>
+			</div>
+		  </div>
+		  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		  <script>
+			new window.VLibras.Widget('https://vlibras.gov.br/app');
+		  </script>
+    </head>
+    <body>
+        <img class="wave" src="images/wave.png" alt="wave" />
+        <div class="container">
+            <div class="img">
+                <img src="images/cel_form.svg" alt="Background" />
+            </div>
+            <div class="login-container">
+                <form method="POST" action="login_usuario.php">
+                    <img src="images/avatar_form.svg" class="avatar" alt="Avatar" />
+                    <h2>bem vindo!</h2>
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Nome de usuário</h5>
+                            <input type="text" name="usuario" class="input" required>
+                        </div>
+                    </div>
+
+                    <div class="input-div two">
+                        <div class="i">
+                            <i class="fa fa-lock fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Senha</h5>
+                            <input type="password" name="senha" class="input" maxlength="12" required>
+                        </div>
+                    </div>
+
+                    <a href="#">Esqueceu a senha?</a>
+                    <input type="submit" class="btn" value="Login">
+                    <br><br>
+
+                    <h5 id="corp">Sou uma corporação:</h5>
+
+                    <a href="cadastro.html"><input type="button" class="btn" value="Cadastre-se aqui!"></a>
+                </form>
+            </div>
+        </div>
+
+        <script src="assets/js/login.js"></script>
+    </body>
+</html>
