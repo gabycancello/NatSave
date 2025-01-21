@@ -46,9 +46,13 @@ Contains the core styling and interactivity files:
 
 This project was an opportunity to explore:
 • *Backend development with PHP.*
+
 • *Front-end development with responsive and accessible design principles.*
+
 • *Collaborative workflows using Git and version control.*
+
 • *Gamification techniques to engage users.*
+
 • *Problem-solving and teamwork under Hackathon time constraints.*
 
 # Contributing
