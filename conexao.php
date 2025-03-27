@@ -1,7 +1,7 @@
 <?php
     $server='localhost';
     $user='root';
-    $password='root';
+    $password="";
     $database='natsave';
 
     // Criar conexão
@@ -12,7 +12,7 @@
         die('Conexão falhou: '.mysqli_connect_error());
     }
     else {
-        //corrção de acentuação
+        //correção de acentuação
         mysqli_query( $conn, "SET NAMES 'utf8'" );
         mysqli_query( $conn, 'SET character_set_connection=utf8' );
         mysqli_query( $conn, 'SET character_set_client=utf8' );
